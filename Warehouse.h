@@ -7,4 +7,4 @@ class Warehouse : public MapInfo {
         Warehouse(int x, int y);
     private:
         std::vector<long> m_productList;
-}
+};
