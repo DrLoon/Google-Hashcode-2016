@@ -16,5 +16,5 @@ class Drone: public MapInfo {
         long m_droneId;
         long m_currentLoad;
         long m_itemCount; 
-        static long m_maxLpad;
+        static long m_maxLoad;
 };

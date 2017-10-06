@@ -21,7 +21,7 @@ long Drone::getDroneId() const
 {
         return m_droneId;
 }
-long m_maxLoad = 0;
+long Drone::m_maxLoad = 0;
 void setMaxLoad(long load)
 {
         m_maxLoad = load;

@@ -10,6 +10,6 @@ FileParser::FileParser(std::string arg) {
 
 long FileParser::ParseHead(){
     std::string line;
-    std::getline(m_input, line, ' \n');
+    std::getline(m_input, line, ' ');
     return std::stol(line);
 }
