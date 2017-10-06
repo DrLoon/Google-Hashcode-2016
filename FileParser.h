@@ -10,5 +10,4 @@ class FileParser {
         
     private:
         std::stringstream m_input;
-        //std::vector<long> m_vector; 
 };
