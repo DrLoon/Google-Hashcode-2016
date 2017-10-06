@@ -3,5 +3,5 @@
 
 void Order::addProduct(long nr)
 {
-        m_numberOfItems[nr] += 1;
+    m_numberOfItems[nr] += 1;
 }

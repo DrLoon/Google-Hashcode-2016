@@ -23,4 +23,9 @@ int main(int argc, char *argv[]){
     long m_nrDrones = fp.ParseHead();
     long m_nrTuns = fp.ParseHead();
     long m_maxPayload = fp.ParseHead();
+    
+    std::vector<long> weights = fp.ParseWeights();
+    std::vector<Warehouse> whl = fp.ParseWarehouses();
+    std::vector<Order> ol = fp.ParseOrders();
+    
 }
