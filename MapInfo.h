@@ -10,7 +10,7 @@ class MapInfo {
         long getNrDrones();
         long getNrWarehouses();
         long getNrOrders();
-    protected:
+    private:
         std::pair<int, int> m_coordinates;
         long m_nrDrones;
         long m_nrWarehouses;
