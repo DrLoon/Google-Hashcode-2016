@@ -1,13 +1,14 @@
 SRC_DIR = ./src
 INC_DIR = ./inc
 OBJ_DIR = ./obj
+BIN_DIR = ./bin
 
 SOURCES = $(wildcard $(SRC_DIR)/*.cpp)
 HEADERS = $(wildcard $(INC_DIR)/*.h)
  
 OBJECTS = $(SOURCES:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
-PROGRAM = hashcode-delivery
- 
+PROGRAM = $(shell basename `pwd`)
+
 CC := $(shell which g++)
 CFLAGS = -Wall -W -O
 LIBS = 
@@ -15,7 +16,8 @@ LDFLAGS = $(LIBS:%=-l%)
 MKDIR = mkdir -p
  
 $(PROGRAM) : $(OBJECTS)
-	$(CC) $(LDFLAGS) -o $@ $(OBJECTS)
+	$(MKDIR) $(BIN_DIR)
+	$(CC) $(LDFLAGS) -o $(BIN_DIR)/$@ $(OBJECTS)
 
 $(OBJECTS): $(OBJ_DIR)/%.o : $(SRC_DIR)/%.cpp
 	$(MKDIR) $(OBJ_DIR)
@@ -23,4 +25,4 @@ $(OBJECTS): $(OBJ_DIR)/%.o : $(SRC_DIR)/%.cpp
 
 .PHONY : clean
 clean :
-	rm -rf $(PROGRAM) $(OBJ_DIR)
+	rm -rf $(BIN_DIR) $(OBJ_DIR)
