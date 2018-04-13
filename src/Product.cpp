@@ -1,4 +1,4 @@
-#include "Product.h"
+#include "../inc/Product.h"
 #include <vector>
 
 std::vector<long> m_weight;

@@ -1,4 +1,4 @@
-#include "MapInfo.h"
+#include "../inc/MapInfo.h"
 
 MapInfo::MapInfo(int x, int y) : m_coordinates(x, y) {};
 

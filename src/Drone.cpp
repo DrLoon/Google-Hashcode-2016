@@ -1,4 +1,4 @@
-#include "Drone.h"
+#include "../inc/Drone.h"
 
 
 void Drone::setItemCount(long itemCount)
@@ -24,5 +24,6 @@ long Drone::getDroneId() const
 long Drone::m_maxLoad = 0;
 void setMaxLoad(long load)
 {
-        m_maxLoad = load;
+        //m_maxLoad = load;
+        return;
 }

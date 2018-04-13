@@ -1,5 +1,5 @@
-#include "FileParser.h"
-#include "Product.h"
+#include "../inc/FileParser.h"
+#include "../inc/Product.h"
 #include <iostream>
 #include <cstring>
 

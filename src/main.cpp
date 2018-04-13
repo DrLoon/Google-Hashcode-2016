@@ -1,13 +1,12 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-#include "main.h"
-#include "MapInfo.h"
-#include "Drone.h"
-#include "Order.h"
-#include "Warehouse.h"
-#include "FileParser.h"
-#include "Functions.h"
+#include "../inc/MapInfo.h"
+#include "../inc/Drone.h"
+#include "../inc/Order.h"
+#include "../inc/Warehouse.h"
+#include "../inc/FileParser.h"
+#include "../inc/Functions.h"
 
 int main(int argc, char *argv[]){
     if(argc != 2){
