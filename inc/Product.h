@@ -1,11 +1,17 @@
 #pragma once
-#include <vector>
 
-class Product{
+class Product
+{
         public:
-        long getNrWeight();
-        void setNrWeigth(long nr);
+                Product();
+                Product(const Product&);
+                ~Product();
+                int getWeight();
+                void setWeight(int newWeight);
+                int getAmount();
+                void setAmount(int newAmount);
 
         private:
-        std::vector<long> m_weight;
+                int weight;
+                int amount;
 };

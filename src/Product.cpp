@@ -1,12 +1,29 @@
 #include "../inc/Product.h"
-#include <vector>
 
-std::vector<long> m_weight;
-long getWeight(int nr)
-{
-        return m_weight[nr];
+Product::Product(){
+        weight = 1;
 }
-void setNrWeight(long nr)
-{
-        m_weight.push_back(nr);
+
+Product::Product(const Product &product){
+        weight = product.weight;
+}
+
+Product::~Product(){
+
+}
+
+int Product::getWeight(){
+        return weight;
+}
+
+void Product::setWeight(int newWeight){
+        weight = newWeight;
+}
+
+int Product::getAmount(){
+        return amount;
+}
+
+void Product::setAmount(int newAmount){
+        amount = newAmount;
 }
