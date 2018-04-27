@@ -2,9 +2,9 @@
 
 class Map {
     public:
-        Map(int nrows, int nrCols);
+        Map(int nrRows, int nrCols);
         Map(const Map &map);
-        virtual ~Map();
+        virtual ~Map(){};
         int getRows();
         int getCols();
         void setRows(int nrRows);

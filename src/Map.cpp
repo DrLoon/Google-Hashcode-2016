@@ -1,4 +1,4 @@
-#include <../inc/Map.h>
+#include "../inc/Map.h"
 
 Map::Map(int nrRows, int nrCols)
 {

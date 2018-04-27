@@ -7,6 +7,7 @@
 #include "../inc/Warehouse.h"
 #include "../inc/FileParser.h"
 #include "../inc/Functions.h"
+#include "../inc/Map.h"
 
 int main(int argc, char *argv[]){
     if(argc != 2){
